@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/style-reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal-styles.css" />
+    <link rel="shortcut icon" href="./img/shifty-ico.ico" type="image/x-icon" />
+    <title>Shwifty</title>
+  </head>
+  <body>
+    <!-- Порядок атрибутов: class id, name data-* src, for, type, href title, alt aria-*, role -->
+    <div class="wrapper">
+      <div class="intro container">
+        <div class="intro__header">
+          <div class="logo">
+            <img class="logo__image" src="./img/intro/logo.png" alt="Shwifty" />
+            <div class="logo__name" id="lol">Shwifty</div>
+          </div>
+          <nav class="navbar">
+            <div class="navbar__toggler" id="navbarToggler">
+              <!-- <span class="material-symbols-rounded"> menu </span> -->
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <ul class="navbar__list" id="navbarCollapse">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#offers">Медіатека</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#about">Блог</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#opportunities">Нагороди</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="tel:">
+                  <span class="navbar__icon material-symbols-rounded"> phone_iphone </span>
+                  +380 55 555 55 55
+                </a>
+              </li>
+              <li class="navbar__item">
+                <button class="registration-button">Завантажити</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="intro__body">
+          <h1>
+            Музика, <br />
+            яка чіпляє
+          </h1>
+          <p class="intro__text">Щодня нові треки. Плейлісти для кожного.</p>
+          <button class="intro__button registration-button">Дізнатись більше</button>
+        </div>
+        <div class="intro__bottom">
+          <a class="intro__scroll-bottom" href="#footer">
+            <span class="intro__scroll-icon material-symbols-rounded"> mouse </span>
+            Прокрутіть вниз по деталі
+          </a>
+        </div>
+      </div>
+      <div class="about container" id="about">
+        <img class="about__image" src="./img/about/about_img.jpg" alt="about image" />
+        <div class="about__article">
+          <h2 class="about__title">Про нас</h2>
+          <p class="about__text">
+            Shwifty — це сервіс, в якому добірки створюють наші власні музичні експерти. Ми самі змалечку виховували їх та виростили на таємному
+            острові, що був повністю ізольований від поганої музики. Їх смак беззаперечний. Переконайтесь в цьому прямо зараз.
+          </p>
+        </div>
+      </div>
+      <div class="opportunities container" id="opportunities">
+        <h2 class="opportunities__title">Можливості</h2>
+        <div class="opportunities__block">
+          <!-- first opportunities row -->
+          <div class="opportunities__row">
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/like.png" alt="opportunitiy" />
+              <p>Лише музика, що варта уваги</p>
+            </div>
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/update.png" alt="opportunitiy" />
+              <p>Мільйони пісень, відібраних вручну</p>
+            </div>
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/music.png" alt="opportunitiy" />
+              <p>Медіатека, що оновлюється щосекунди</p>
+            </div>
+          </div>
+          <!-- second opportunities row -->
+          <div class="opportunities__row">
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/disk.png" alt="opportunitiy" />
+              <p>Професійні авторські добірки</p>
+            </div>
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/share.png" alt="opportunitiy" />
+              <p>Автопереклад текстів пісень українською</p>
+            </div>
+            <div class="opportunities__item">
+              <img class="opportunities__image" src="./img/opportunities/heart.png" alt="opportunitiy" />
+              <p>Адаптація під ваш смак</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offers container" id="offers">
+        <h2 class="offers__title">Пропозиції</h2>
+        <div class="offers__row">
+          <!-- basis offers__item -->
+          <div class="offers__block">
+            <div class="offers__descrtiption">
+              <h3 class="offers__subtitle">Пакет “Базовий”</h3>
+              <ul class="offers__list">
+                <li class="offers__item">Включає:</li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Доступ до всієї музичної бібліотеки
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle </span>
+                  Доступ до відеотеки
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Подкасти
+                </li>
+              </ul>
+            </div>
+            <div class="offers__choose">
+              <p class="offers__price">100 грн / місяць</p>
+              <button class="offers__button registration-button choose-button" key="Базовий">Обрати</button>
+            </div>
+          </div>
+          <!-- meloman offers__item -->
+          <div class="offers__block">
+            <div class="offers__descrtiption">
+              <h3 class="offers__subtitle">Пакет “Меломан”</h3>
+              <ul class="offers__list">
+                <li class="offers__item">Включає:</li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded"> check_circle</span>
+                  Доступ до всієї музичної бібліотеки
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded"> check_circle </span>
+                  Доступ до відеотеки
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded"> check_circle</span>
+                  Подкасти
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Індивідуальні добірки за запитом
+                </li>
+              </ul>
+            </div>
+            <div class="offers__choose">
+              <p class="offers__price">300 грн / місяць</p>
+              <button class="offers__button registration-button choose-button" key="Меломан">Обрати</button>
+            </div>
+          </div>
+          <!-- meloman+ offers__item -->
+          <div class="offers__block">
+            <div class="offers__descrtiption">
+              <h3 class="offers__subtitle">Пакет “Меломан+”</h3>
+              <ul class="offers__list">
+                <li class="offers__item">Включає:</li>
+                <li class="offers__item">Доступ до всієї музичної бібліотеки</li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Доступ до відеотеки
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Подкасти
+                </li>
+                <li class="offers__item">
+                  <span class="offers__icon material-symbols-rounded">check_circle</span>
+                  Індивідуальні добірки за запитом
+                </li>
+                <li class="offers__item">Сімейний доступ</li>
+              </ul>
+            </div>
+            <div class="offers__choose">
+              <p class="offers__price">500 грн / місяць</p>
+              <button class="offers__button registration-button choose-button" key="Меломан+">Обрати</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer" id="footer">
+        <div class="footer__row">
+          <div class="footer__colum">
+            <p>Всі права захищено.</p>
+          </div>
+          <div class="footer__colum">
+            <p>Дизайн створено: <a class="footer__link" href="https://www.behance.net/anastasiyazuzya">Анастасією Зюзею</a></p>
+          </div>
+        </div>
+      </footer>
+      <!-- modals ----------------------------------------------------------->
+      <div class="modals" id="modals">
+        <!-- first modal -->
+        <div class="registration-modal modal" id="registration-modal">
+          <button class="close-modal">
+            <span class="material-symbols-rounded"> close </span>
+          </button>
+          <div class="modal-container">
+            <h2>Слухайте дійсно якісну музику!</h2>
+            <form class="modal-body" action="#" method="POST">
+              <label class="registration-modal__offers-changer" for="offer__changer">
+                Обраний пакет:
+                <span class="registration-modal__offer" id="userOffer">Базовий</span>
+                <input class="registration-modal__offer-button" type="button" id="offersChanger" value="Змінити" />
+              </label>
+              <label class="registration-modal__label"> Ваше ім'я </label>
+              <input class="registration-modal__input" type="text" id="userName" placeholder="Степан Степанчук" required />
+              <label class="registration-modal__label"> Ваш e-mail </label>
+              <input class="registration-modal__input" type="email" id="userEmail" placeholder="moyaposhta@gmail.com" required />
+              <!-- checkbox -->
+              <label class="registration-modal__condition" for="checkbox">
+                <input class="registration-modal__checkbox-hide" id="checkbox" type="checkbox" required />
+                <span class="registration-modal__checkbox-show"></span>
+                Погоджуюсь з <a class="registration-modal__link" href="#"> умовами сервісу</a>
+              </label>
+              <button type="submit" class="registration-button">Зареєструватись</button>
+            </form>
+          </div>
+        </div>
+        <!-- confirm registration -->
+        <div class="verification-modal modal" id="verification-modal">
+          <button class="close-modal">
+            <span class="material-symbols-rounded"> close </span>
+          </button>
+          <div class="modal-container">
+            <h2>Перевірка заповнених полів:</h2>
+            <div class="modal-body">
+              <p class="verification-modal__item">Обраний пакет <span class="verification-modal__data" id="userOfferConfirm">Базовий</span></p>
+              <p class="verification-modal__item">Ваше ім'я <span class="verification-modal__data" id="userNameConfirm">username</span></p>
+              <p class="verification-modal__item">Ваш e-mail <span class="verification-modal__data" id="userEmailConfirm"></span></p>
+              <p class="verification-modal__item">Погоджуюсь з нашими <a class="verification-modal__link" href="#">умовами сервісу.</a></p>
+              <button class="button-back registration-button">Повернутись до форми реєстрації</button>
+              <button class="registration-button">Все вірно, зареєструватись</button>
+            </div>
+          </div>
+        </div>
+        <div class="success-modal modal" id="success-modal">
+          <div class="modal-container">
+            <div class="modal-body">
+              <img class="success-modal__image" src="./img/Succes Icon.png" alt="" />
+              <h2>Чудово!</h2>
+              <p class="success-modal__text">Ми надішлемо вам листа з подальшими інструкціями стосовно реєстрації!</p>
+              <button class="registration-button">Закрити вікно</button>
+            </div>
+          </div>
+        </div>
+        <div class="offers-modal modal" id="offers-modal">
+          <button class="close-modal">
+            <span class="material-symbols-rounded"> close </span>
+          </button>
+          <div class="modal-container">
+            <h2>Оберіть свій пакет</h2>
+            <div class="modal-body">
+              <div class="offers-modal__item">
+                <label class="offers-modal__label">
+                  Базовий
+                  <input class="offers-modal__button choose-button" key="Базовий" type="button" value="Обрати" />
+                </label>
+                <p class="offers-modal__price">100 грн / місяць</p>
+              </div>
+              <div class="offers-modal__item">
+                <label class="offers-modal__label">
+                  Меломан
+                  <input class="offers-modal__button choose-button" key="Меломан" type="button" value="Обрати" />
+                </label>
+                <p class="offers-modal__price">100 грн / місяць</p>
+              </div>
+              <div class="offers-modal__item">
+                <label class="offers-modal__label">
+                  Меломан+
+                  <input class="offers-modal__button choose-button" key="Меломан+" type="button" value="Обрати" />
+                </label>
+                <p class="offers-modal__price">100 грн / місяць</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------- -->
+      <script src="./script/script.js"></script>
+    </div>
+  </body>
+</html>

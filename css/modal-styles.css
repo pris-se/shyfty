@@ -1,0 +1,180 @@
+.modals {
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100%;
+  min-width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem;
+  z-index: 999;
+}
+.modal {
+  display: none;
+  background-color: #fff;
+  max-width: 800px;
+  max-height: 650px;
+  margin: calc(50vh - 325px) auto;
+  padding: 15px 10px;
+  border-radius: 40px;
+}
+
+.close-modal {
+  float: right;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.close-modal:hover {
+  transform: scale(1.2);
+}
+.open-modal {
+  display: block !important;
+}
+
+.modal h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal-container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.registration-modal__offers-changer {
+  color: #000000;
+  margin-bottom: 33px;
+  background: linear-gradient(180deg, rgba(153, 153, 153, 0.32) 0%, rgba(198, 198, 198, 0.13) 100%);
+  border-radius: 4px;
+  padding: 9px 12px;
+}
+.registration-modal__offer {
+  font-weight: 700;
+}
+.registration-modal__offer-button {
+  float: right;
+  font-weight: 700;
+  color: #ff0000;
+}
+
+.registration-modal__label {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  margin-bottom: 13px;
+}
+.registration-modal__input {
+  border: 1px solid #000000;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 9px 12px;
+  margin-bottom: 33px;
+}
+.registration-modal__input::placeholder {
+  color: #767676;
+}
+.registration-modal__condition {
+  position: relative;
+  padding: 6.5px;
+  margin-bottom: 33px;
+}
+.registration-modal__checkbox-hide {
+  margin-right: 20px;
+  opacity: 0;
+}
+.registration-modal__checkbox-show {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  width: 35px;
+  height: 35px;
+  border: 1px solid #999999;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.registration-modal__checkbox-hide:checked ~ .registration-modal__checkbox-show {
+  background-image: url("../img/Checkmark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.registration-modal__link {
+  font-weight: 600;
+  color: #ff0000;
+}
+
+.verification-modal {
+  display: none;
+}
+
+.verification-modal__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border-bottom: 1px solid #999999;
+  margin-bottom: 40px;
+}
+.verification-modal__item:nth-child(4) {
+  display: inline-block;
+  border-bottom: 0;
+}
+.verification-modal__data {
+  font-weight: 700;
+}
+.verification-modal__link {
+  font-weight: 600;
+  color: #ff0000;
+}
+
+.button-back {
+  background-color: #c6c6c6;
+  margin-bottom: 30px;
+}
+
+.success-modal {
+  display: none;
+}
+.success-modal__image {
+  align-self: center;
+  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.success-modal__text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.success-modal__button {
+  margin-bottom: 15px;
+}
+.offers-modal {
+  display: none;
+}
+.offers-modal__item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(153, 153, 153, 0.32) 0%, rgba(198, 198, 198, 0.13) 100%);
+}
+.offers-modal__label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.offers-modal__price {
+  font-weight: 500;
+}
+.offers-modal__button {
+  color: #ff0000;
+}
