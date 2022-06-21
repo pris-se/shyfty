@@ -259,7 +259,7 @@ h2 {
 }
 @media (max-width: 600px) {
   .intro__body {
-    justify-content: center;
+    margin-top: 100%;
     margin-bottom: 50px;
   }
 }
