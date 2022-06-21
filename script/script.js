@@ -15,8 +15,6 @@ let userEmailConfirm = document.querySelector("#userEmailConfirm");
 
 // Show Menu
 navBar.addEventListener("click", (e) => {
-  // if (e.target.classList.contains("navbar__link")) {
-  // }
   navBar.classList.remove("navbar-open");
   navbarToggler.classList.remove("open");
 });
