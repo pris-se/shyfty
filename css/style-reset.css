@@ -87,7 +87,6 @@ a {
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
   display: block;
 }
 input {
