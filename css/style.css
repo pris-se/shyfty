@@ -262,7 +262,7 @@ h2 {
 @media (max-width: 600px) {
   .intro__body {
     -webkit-box-pack: justify;
-    -webkit-justify-content: end;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
     margin-bottom: 50px;
   }
@@ -312,6 +312,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .about__image {
   width: 400px;
@@ -332,6 +333,9 @@ h2 {
   }
 }
 @media (max-width: 600px) {
+  .about {
+    margin-top: 25px;
+  }
   .about__image {
     width: 350px;
     height: 350px;

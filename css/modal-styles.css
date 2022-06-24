@@ -84,10 +84,11 @@
 .registration-modal__condition {
   position: relative;
   padding: 6.5px;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
 }
 .registration-modal__checkbox-hide {
   margin-right: 20px;
+  margin-bottom: 20px;
   opacity: 0;
 }
 .registration-modal__checkbox-show {
