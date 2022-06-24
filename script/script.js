@@ -1,9 +1,28 @@
+(function (ELEMENT) {
+  ELEMENT.matches =
+    ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+
+  ELEMENT.closest =
+    ELEMENT.closest ||
+    function closest(selector) {
+      if (!this) return null;
+
+      if (this.matches(selector)) return this;
+
+      if (!this.parentElement) {
+        return null;
+      } else return this.parentElement.closest(selector);
+    };
+})(Element.prototype);
+
 let navbarToggler = document.querySelector("#navbarToggler");
 let navBar = document.querySelector("#navbarCollapse");
 let registrationModal = document.querySelector("#registration-modal");
 let modalsScreen = document.querySelector("#modals");
-let registrationButtons = [...document.querySelectorAll(".registration-button")];
-let closeButtons = [...document.querySelectorAll(".close-modal")];
+// let registrationButtons = [...document.querySelectorAll(".registration-button")];
+// let closeButtons = [...document.querySelectorAll(".close-modal")];
+let registrationButtons = Array.from(document.querySelectorAll(".registration-button"));
+let closeButtons = Array.from(document.querySelectorAll(".close-modal"));
 
 let userOffer = document.querySelector("#userOffer");
 let userName = document.querySelector("#userName");
@@ -34,7 +53,7 @@ function closeModal(e) {
 }
 
 function closeModalScreen(e) {
-  [...document.querySelectorAll(".open-modal")].forEach((e) => e.classList.remove("open-modal"));
+  Array.from(document.querySelectorAll(".open-modal")).forEach((e) => e.classList.remove("open-modal"));
 }
 closeButtons.forEach((e) => e.addEventListener("click", closeModalScreen));
 
@@ -82,7 +101,7 @@ function offersChanger(e) {
 }
 offersChangerButton.addEventListener("click", offersChanger);
 
-let offerChooseButton = [...document.querySelectorAll(".choose-button")];
+let offerChooseButton = Array.from(document.querySelectorAll(".choose-button"));
 function offerChoose(e) {
   userOffer.textContent = e.target.attributes.key.value;
   closeModal(e);
@@ -97,5 +116,3 @@ offerChooseButton.forEach((e) => e.addEventListener("click", offerChoose));
 //   userName: userNameConfirm.textContent,
 //   userEmail: userEmailConfirm.textContent,
 // };
-let bb = document.querySelector(".button-back").classList.contains("button-back");
-console.log(bb);
