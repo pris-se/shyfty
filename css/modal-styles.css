@@ -8,6 +8,7 @@
   font-weight: 500;
   font-size: 1.1rem;
   z-index: 999;
+  overflow: auto;
 }
 .modal {
   display: none;
@@ -18,7 +19,8 @@
   padding: 15px 10px;
   border-radius: 40px;
 }
-
+@media screen {
+}
 .close-modal {
   float: right;
   font-size: 1.5rem;
@@ -98,6 +100,7 @@
   border: 1px solid #999999;
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
+  cursor: pointer;
 }
 .registration-modal__checkbox-hide:checked ~ .registration-modal__checkbox-show {
   background-image: url("../img/Checkmark.png");
